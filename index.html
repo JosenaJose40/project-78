@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Family Book</title>
+</head>
+<body style="text-align: center;">
+   <div>
+    <h1>
+        Family Book
+    </h1>
+    <img src="https://c8.alamy.com/comp/P1TGX6/cute-father-cartoon-P1TGX6.jpg" id="img_op" height="300px">
+    <h3 id="suprop">
+        Father
+    </h3>
+    <button id="button_op" onclick="op_bolte()">
+        Next
+    </button>
+   </div>
+   <script>
+      console.log(img_array);
+      var name_array=["P J Leons - my dad"," Shiny Leons - my Mother","Liana p Leons - my sister"," Josena jose- my Aunt","gregory p leons-My Brother","aliyamma john -Grandmother","Gregory P Leons-Me"]
+      console.log(name_array);
+      var img_array=[
+          "https://webstockreview.net/images/father-clipart-10.jpg",
+          "https://th.bing.com/th/id/OIP.n00Nu6LYArMKRAt4aIgcRgHaPC?pid=ImgDet&rs=1",
+          "https://th.bing.com/th/id/OIP.lp-H862VAyJ_mMpQdGdGKAHaHF?pid=ImgDet&rs=1",
+          "https://th.bing.com/th/id/OIP.m8E_MJQtR76tKBJAC64TzwHaK-?pid=ImgDet&rs=1",
+          "https://th.bing.com/th/id/OIP.pOzogG0UAx6beFNtOA7exAHaOt?pid=ImgDet&rs=1",
+          "https://th.bing.com/th/id/R9a5356579ad2ae80af7725e487157afa?rik=GdWBxxrMQmkdJg&riu=http%3a%2f%2fclipartmag.com%2fimages%2fcartoon-grandparents-clipart-9.jpg&ehk=%2bFmgoq1b8oHh4z3b4moni1tAntNjHiQp5nhVodiV770%3d&risl=&pid=ImgRaw",
+          "https://image.freepik.com/free-vector/happy-boy-cartoon_160606-377.jpg"
+        ];
+        var i=0;
+      function op_bolte() {
+         i++;
+         if (i>7) {
+           i=0;
+         };
+         document.getElementById("img_op").src=img_array[i];
+         document.getElementById("suprop").innerHTML=name_array[i];
+      };
+   </script>
+</body>
+</html>
